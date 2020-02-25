@@ -1,0 +1,28 @@
+{
+  "name": "@zoomus/botservice",
+  "version": "0.1.0",
+  "description": "core lib for @zoomus/chatbot-cli",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --config  ./jest.config.js"
+  },
+  "keywords": [
+    "zoom",
+    "chatbot"
+  ],
+  "author": "fox.jiang",
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "babel-jest": "^25.1.0",
+    "babel-plugin-rewire": "^1.2.0",
+    "eslint": "^5.16.0",
+    "jest": "^25.1.0",
+    "rewire": "^4.0.1",
+    "supertest": "^4.0.2"
+  },
+  "dependencies": {
+    "fs-extra": "^8.1.0",
+    "ramda": "^0.26.1",
+    "@zoomus/chatbot": "^1.0.3"
+  }
+}
