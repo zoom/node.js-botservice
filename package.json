@@ -12,6 +12,14 @@
   ],
   "author": "fox.jiang",
   "license": "Apache-2.0",
+  "homepage": "https://github.com/zoom/node.js-botservice#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zoom/node.js-botservice.git"
+  },
+  "bugs": {
+    "url": "https://github.com/zoom/node.js-botservice/issues"
+  },
   "devDependencies": {
     "babel-jest": "^25.1.0",
     "babel-plugin-rewire": "^1.2.0",
