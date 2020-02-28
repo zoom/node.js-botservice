@@ -1,4 +1,4 @@
-const { oauth2, client, setting, log } = require('@zoomus/chatbot');
+const { oauth2, client, setting, log,request } = require('@zoomus/chatbot');
 let parse = require('./parse');
 let createZoomAppMiddle = require('./createZoomAppMiddle');
 let createWebhookMiddle = require('./createWebhookMiddle');
@@ -50,6 +50,7 @@ module.exports = function(option) {
     .defaultAuth(oauth2Client.connect());
 
   let zoomInfo = {
+    request,
     bot: zoomBot,
     auth: oauth2Client,
     sendMessage

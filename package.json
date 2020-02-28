@@ -31,6 +31,6 @@
   "dependencies": {
     "fs-extra": "^8.1.0",
     "ramda": "^0.26.1",
-    "@zoomus/chatbot": "^1.0.3"
+    "@zoomus/chatbot": "^1.0.4"
   }
 }

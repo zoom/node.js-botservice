@@ -1,5 +1,5 @@
 let zoomAuth = (zoom,models,botLog)=>{
-  let { bot, auth,sendMessage } = zoom;
+  let { bot, auth,sendMessage,request } = zoom;
   return async function(req, res, next) {
     let { code } = req.query;
     try {
@@ -7,6 +7,7 @@ let zoomAuth = (zoom,models,botLog)=>{
       let app = bot.create({ auth: connection });
       //send zoom app
       res.locals.zoomApp = app;
+      res.locals.request = request;
       res.locals.databaseModels = models;
       res.locals.botLog = botLog;
       next();

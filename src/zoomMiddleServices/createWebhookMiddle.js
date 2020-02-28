@@ -1,5 +1,5 @@
 let webhookMiddle = (zoom,models,botLog)=>  {
-  let { bot, auth, log,sendMessage } = zoom;
+  let { bot, auth, sendMessage,request } = zoom;
   return async (req, res, next) => {
     let { body, headers } = req;
     try {
@@ -8,6 +8,7 @@ let webhookMiddle = (zoom,models,botLog)=>  {
       let newApp = bot.create({ auth: auth.connect() });
       res.locals.zoomApp = newApp;
       res.locals.zoomWebhook = data;
+      res.locals.request = request;
       res.locals.databaseModels = models;
       res.locals.botLog = botLog;
       next();
