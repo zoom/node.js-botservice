@@ -88,7 +88,8 @@ let createApiServices = function(option, router, zoomMiddles,log) {
             let { command, callback } = item;
             if (command === undefined) {
               noCommandItem = item;
-            } else if (
+            } 
+            else if (
               R.type(command) === 'String' &&
               R.type(originCommand) === 'String' &&
               originCommand === command &&
@@ -97,6 +98,16 @@ let createApiServices = function(option, router, zoomMiddles,log) {
               callback(req, res);
               hasCommand = true;
             }
+            else if(
+              R.type(command) === 'RegExp' &&
+              R.type(originCommand) === 'String' &&
+              originCommand.match(command)!==null &&
+              typeof callback === 'function'
+            ){
+              callback(req, res);
+              hasCommand = true;
+            }
+            
           });
 
           if (hasCommand === false) {
