@@ -1,4 +1,7 @@
 # botservice
+
+Use of this package is subject to our [Terms of Use](https://zoom.us/docs/en-us/zoom_api_license_and_tou.html)
+
 This is the core package which [zoom @zoomus/chatbot-cli](https://www.npmjs.com/package/@zoomus/chatbot-cli) used. It will create the apis&&commands&actions&&middleware for you that defined in botConfig.js
 
 
