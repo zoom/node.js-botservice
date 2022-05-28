@@ -29,7 +29,7 @@
     "supertest": "^4.0.2"
   },
   "dependencies": {
-    "fs-extra": "^8.1.0",
+    "fs-extra": "^9.0.0",
     "ramda": "^0.26.1",
     "@zoomus/chatbot": "^1.0.4"
   }
