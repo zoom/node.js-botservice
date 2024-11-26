@@ -1,3 +1,9 @@
+#### THIS PACKAGE IS DEPRECATED
+
+Please see the latest official package [@zoom/rivet](https://www.npmjs.com/package/@zoom/rivet), thank you!
+
+---
+
 # botservice
 
 Use of this package is subject to our [Terms of Use](https://zoom.us/docs/en-us/zoom_api_license_and_tou.html)
